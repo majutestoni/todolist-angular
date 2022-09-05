@@ -12,11 +12,18 @@ export class DashboardListComponent implements OnInit {
 
   constructor(private ListService: ListService) {}
 
+
   ngOnInit(): void {
     this.items = this.ListService.items;
     this.ListService.allTheTodos().subscribe((items: Todos[]) => {
       console.table(items);
       this.items = items;
     });
+  }
+
+  onDelete(item: Todos) {
+    this.ListService.remove(item).subscribe((sucess) =>
+      window.location.reload()
+    );
   }
 }

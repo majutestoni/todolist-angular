@@ -1,16 +1,8 @@
 {
   "todos": [
     {
-      "id": "1",
-      "description": "fazer tarefas de casa"
-    },
-    {
-      "id": "2",
-      "description": "fazer carinho no fred"
-    },
-    {
-      "description": "teste123",
-      "id": "6ZYMJyE"
+      "description": "teste tarefa",
+      "id": 2
     }
   ]
 }

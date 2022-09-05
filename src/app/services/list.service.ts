@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, take } from 'rxjs';
 import { Todos } from 'src/models/todo.model';
 
 @Injectable({
@@ -25,7 +25,7 @@ export class ListService {
     return this.HttpClient.post<Todos>(this.url, item);
   }
 
-  remove(items: any[], item: any) {
-    return items.filter((a) => item.description !== a.description);
+  remove(item: Todos) {
+    return this.HttpClient.delete<Todos>( `${this.url}/${item.id}`).pipe(take(1))
   }
 }

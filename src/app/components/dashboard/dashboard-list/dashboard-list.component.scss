@@ -17,9 +17,10 @@
   opacity: 0;
 }
 .checkbox + .check {
+    position: absolute;
   width: 15px;
   height: 15px;
-  border: 2px solid #551414;
+  border: 2px solid #722c41;
   transition: 0.2s;
 }
 
@@ -61,4 +62,20 @@
 
 .bnt {
   margin-left: 15px;
+}
+
+
+.adicionar {
+    margin: 3px;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    cursor: pointer;
+    
+  }
+
+  .adicionar:hover{
+    background-color: #ffb6c1;
 }

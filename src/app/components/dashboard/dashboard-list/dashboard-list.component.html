@@ -6,8 +6,8 @@
       <i class="check"></i>
       <span> {{ item.description }}</span>
       <div class="bnt">
-        <button>Excluir</button>
-        <button [routerLink]="['/create']">Editar</button>
+        <button class="adicionar" (click)="onDelete(item)">Excluir</button>
+        <button class="adicionar" [routerLink]="['/create']">Editar</button>
       </div>
     </label>
   </fieldset>
