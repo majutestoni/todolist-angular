@@ -1,0 +1,10 @@
+<h3>Lista de afazeres</h3>
+<ul *ngIf="items.length != 0;else listaVazia">
+  <li *ngFor="let item of items">
+    <!-- especificar que é item.new  -->
+    {{ item.description }}
+    <button>Excluir</button>
+    <button [routerLink]="['/create']">Editar</button>
+  </li>
+</ul>
+<ng-template #listaVazia>Não possui afazeres</ng-template>

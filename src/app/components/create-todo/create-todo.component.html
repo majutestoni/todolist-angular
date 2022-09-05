@@ -1,0 +1,27 @@
+<h3>Criar novo todo</h3>
+<!--  teste para mandar dados do filho para o pai -->
+<form (ngSubmit)="addNewTodo()">
+  <label
+    >Digite a nova tarefa
+    <br>
+    <input
+      placeholder="Escreva aqui"
+      type="text"
+      [(ngModel)]="description"
+      name="description"
+      #newItem
+    />
+    <button class="adicionar" type="submit">+</button>
+  </label>
+</form>
+<!--   <button type="submit" (click)="addNewItem(newItem.value)">Adicionar</button> -->
+
+<br />
+
+<!--  editar para deixar bonitinho para apresentar, trab de css -->
+<h5>Amostra:</h5>
+<p class="amostra">{{ description }}</p>
+<br />
+<div class="text-butt">
+  <a class="btn btn-white btn-animate" [routerLink]="['/']">{{ text }}</a>
+</div>
