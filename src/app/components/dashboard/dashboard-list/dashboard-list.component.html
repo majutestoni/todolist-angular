@@ -1,10 +1,15 @@
 <h3>Lista de afazeres</h3>
-<ul *ngIf="items.length != 0;else listaVazia">
-  <li *ngFor="let item of items">
-    <!-- especificar que é item.new  -->
-    {{ item.description }}
-    <button>Excluir</button>
-    <button [routerLink]="['/create']">Editar</button>
-  </li>
-</ul>
+<div *ngIf="items.length != 0; else listaVazia">
+  <fieldset class="todo-list" *ngFor="let item of items">
+    <label [for]="item.id" class="todo-list_label">
+      <input type="checkbox" name="todo" [id]="item.id" class="checkbox"/>
+      <i class="check"></i>
+      <span> {{ item.description }}</span>
+      <div class="bnt">
+        <button>Excluir</button>
+        <button [routerLink]="['/create']">Editar</button>
+      </div>
+    </label>
+  </fieldset>
+</div>
 <ng-template #listaVazia>Não possui afazeres</ng-template>
