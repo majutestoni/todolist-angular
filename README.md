@@ -1,27 +1,28 @@
-# Todolist
+# todolist-angular
+This project was generated with Angular CLI version 10.1.6.
+**tem por objetivo:**
+- conhecimento em Angular
+- conhecimento em HTML e SCSS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
+Este foi meu primeiro projeto feito em Angular sem acopanhar nenhum curso (alem de ser o meu primeiro utilizando framework e Typescript), por tal motivo, ele é mais complexo do que deveria e utilizava um banco local json que só atualizava ao dar F5 no projeto, que posteriormente exclui.
 
-## Development server
+## Projeto em sua maquina
+#### Clone
+- criar uma pasta em seu computador 
+- abrir um terminal git bash na mesma (com o botão direito)
+- dar o comando
+```sh
+git clone https://github.com/majutestoni/todolist-angular.git
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### Levantando o local
+- Abrir o VSCode (ou editor de preferencia)
+- abrir um terminal de powershell
+```sh
+npm install
+```
+- após concluir
+```sh
+npm start
+```
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
